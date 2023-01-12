@@ -15,7 +15,7 @@ To use in production, create an Azure Function and upload to Azure. For security
 ## Usage
 To use the function, get your function URL and then just append the RSS URL that you would like to get as JSON. For example:
 
-https://<YourFunctionPrefix>.azurewebsites.net/api/rssfeed?code=<SuperSecretCode>&feed=https://martinfowler.com/feed.atom
+https://&lt;YourFunctionPrefix&gt;.azurewebsites.net/api/rssfeed?code=&lt;SuperSecretCode&gt;&feed=https://martinfowler.com/feed.atom
 
 To run locally, start with `npm start` then use a URL as such:
 
