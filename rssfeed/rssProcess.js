@@ -22,6 +22,9 @@ module.exports = async function (feed) {
         response.title = feedTitle.title;
         if (response.title && response.title.length) {
             response.title = response.title[0];
+            if (response.title["_"]) {
+                response.title = response.title["_"];
+            }
         }
 
         // Get the image URL
@@ -52,6 +55,9 @@ module.exports = async function (feed) {
                 let title = "";
                 if (entries[i].title && entries[i].title.length) {
                     title = entries[i].title[0];
+                    if (title["_"]) {
+                        title = title["_"];
+                    }
                 }
 
                 // Item description text
